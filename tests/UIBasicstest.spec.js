@@ -36,8 +36,8 @@ test('Browser concept PW test', async ({browser})=>
 
 test('Page PW test', async ({page}) =>
 {
-   
-   await page.goto ("https://google.com");
+ // making a change for Renu fixes branch  
+   await page.got ("https://google.com");
    //get title and add assertion
    console.log(await page.title());
    await expect(page).toHaveTitle("Google");
